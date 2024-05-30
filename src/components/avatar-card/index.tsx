@@ -29,7 +29,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
       <div className="grid place-items-center py-8">
         {loading || !profile ? (
           <div className="avatar opacity-90">
-            <div className="mb-8 rounded-full w-32 h-32">
+            <div className="mb-8 rounded-full w-35 h-35">
               {skeleton({
                 widthCls: 'w-full',
                 heightCls: 'h-full',
@@ -40,9 +40,9 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
         ) : (
           <div className="avatar opacity-90">
             <div
-              className={`mb-8 rounded-full w-32 h-32 ${
+              className={`mb-10 rounded-full w-33 h-33 ${
                 avatarRing
-                  ? 'ring ring-primary ring-offset-base-100 ring-offset-2'
+                  ? 'ring ring-primary ring-offset-base-100 ring-offset-4'
                   : ''
               }`}
             >
@@ -60,10 +60,10 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             </div>
           </div>
         )}
-        <div className="text-center mx-auto px-8">
-          <h5 className="font-bold text-2xl">
+        <div className="text-center mx-auto px-12">
+          <h5 className="font-bold text-3xl">
             {loading || !profile ? (
-              skeleton({ widthCls: 'w-48', heightCls: 'h-8' })
+              skeleton({ widthCls: 'w-32', heightCls: 'h-32' })
             ) : (
               <span className="text-base-content opacity-70">
                 {profile.name}

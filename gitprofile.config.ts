@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'ahmedselhady', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/gitprofile/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -29,37 +29,36 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Personal Projects, Freelance, and Consultancy',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Consultancy: Al Daryiah Generative AI',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Provided system architecture design to build an interactive generative AI solution.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/At-Turaif_District_of_Diriyah%2C_Saudi_Arabia.jpg/1200px-At-Turaif_District_of_Diriyah%2C_Saudi_Arabia.jpg',
+          link: '#',
         },
         {
-          title: 'Project Name',
+          title: 'Typical Company: Intelligent Scheduling System for Irrigation Pipelines',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Web-based application to schedule irrigation jobs for farming enterprises. The application is consumed through Typical Engineering Solutions company, managing farming solutions for multiple enterprises in Saudi Aribia, Egypt, and Others.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            './src/assets/img/typical_scheduler.jpeg',
+          link: '#',
         },
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Profile of Ahmed Salem Mohamed Elhady Mohamed',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'aselhady',
+    twitter: 'ahsalem511',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -70,91 +69,104 @@ const CONFIG = {
     dribbble: '',
     behance: '',
     medium: 'arifszn',
-    dev: 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
     website: 'https://www.arifszn.com',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'ahelhady511@gmail.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
+    'Generative AI',
+    'DL/ML',
+    'LLMs',
+    'pytorch',
+    'tensorflow',
     'React.js',
     'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Neo4J',
+    'PostgresSql'
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Microsoft',
+      position: 'Applied Data Scientist II',
+      from: 'AUG 2023',
+      to: 'MAR 2024',
+      companyLink: 'https://www.youtube.com/watch?v=KWcDW1gTobQ',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Agolo',
+      position: 'NLP- Applied Data Scientist II',
+      from: 'JAN 2023',
+      to: 'JUL 2023',
+      companyLink: 'https://www.agolo.com/',
+    },
+    {
+      company: 'Agolo',
+      position: 'NLP- Applied Data Scientist',
+      from: 'JUL 2020',
+      to: 'DEC 2022',
+      companyLink: 'https://www.agolo.com/',
     },
   ],
-  certifications: [
+  Teaching: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      company: 'Microsoft',
+      position: 'Applied Data Scientist II',
+      from: 'AUG 2023',
+      to: 'MAR 2024',
+      companyLink: 'https://www.youtube.com/watch?v=KWcDW1gTobQ',
+    },
+    {
+      company: 'Cairo University, Faculty of Engineering - Computer Engineering',
+      position: 'Graduate Teaching Assistant',
+      from: 'OCT 2020',
+      to: 'JAN 2022',
+      companyLink: 'https://cmp.eng.cu.edu.eg/en/',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'University of the Basque Country (UPV/EHU), Language Analysis and Processing Department',
+      degree: 'Ph.D.',
+      from: '2024',
+      to: '2028',
+      grade: '',
+      thesis: ""
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'University of Science and Technology (UST) at Zewail City',
+      degree: 'MSc in Computer Information and Mathematics',
+      from: '2022',
+      to: '2024',
+      grade: 'GPA: 4.0/4.0',
+      thesis: "Thesis: Improving Factual Accuracy in Multi-document Summarization of Clinical Documents"
+    },
+    {
+      institution: 'Cairo University, Faculty of Computer Engineering',
+      degree: 'BSc in Computer and Communications Engineering',
+      from: '2015',
+      to: '2020',
+      grade: 'GPA: 3.94/4.0',
+      thesis: ""
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'Improving Factuality in Clinical Abstractive Multi-Document Summarization by Guided Continued Pre-training',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
+      journalName: 'NAACL 2024',
+      authors: 'Ahmed Elhady, Khaled Mostafa Elsayed, Eneko Agirre, Mikel Artetxe',
       link: 'https://example.com',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Factual accuracy is an important property of neural abstractive summarization models, especially in fact-critical domains such as the clinical literature. In this work, we introduce a guided continued pre-training stage for encoder-decoder models that improves their understanding of the factual attributes of documents, which is followed by supervised finetuning on summarization. Our approach extends the pre-training recipe of BART to incorporate 3 additional objectives based on PICO spans, which capture the population, intervention, comparison and outcomes related to a clinical study. Experiments on multidocument summarization in the clinical domain demonstrate that our approach is competitive with prior work, improving the quality and factuality of the summaries and achieving the best published results in factual accuracy on the MSLR task.',
     },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
@@ -171,15 +183,15 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'cupcake',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: false,
+    respectPrefersColorScheme: true,
 
     // Display the ring in Profile picture
     displayAvatarRing: true,
