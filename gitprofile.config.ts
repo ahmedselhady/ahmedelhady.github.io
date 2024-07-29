@@ -41,6 +41,14 @@ const CONFIG = {
           link: '#',
         },
         {
+          title: 'Freelance: Knowledge Graph building from PDFs',
+          description:
+            'Extraction and refinement of Knowledge graph according to a given schema. OpenIE is used to do initial extractions, then Mistral-7b-v0.3 is employed to refine extractions and schema. The final graph is retrieved and utilized in retreival augmented generation (RAG) for question answering.',
+          imageUrl:
+            './src/assets/img/daryiah.jpeg',
+          link: '#',
+        },
+        {
           title: 'Typical Company: Intelligent Scheduling System for Irrigation Pipelines',
           description:
             'Web-based application to schedule irrigation jobs for farming enterprises. The application is consumed through Typical Engineering Solutions company, managing farming solutions for multiple enterprises in Saudi Aribia, Egypt, and Others.',
@@ -59,20 +67,21 @@ const CONFIG = {
   social: {
     linkedin: 'aselhady',
     twitter: 'ahsalem511',
+    scholar:'9gk2mKsAAAAJ&hl',
     researchGate: '',
     facebook: '',
-    instagram: '',
+    instagram: 'ahmed.bin.salem',
     reddit: '',
     threads: '',
     youtube: '', // example: 'pewdiepie'
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
+    medium: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
     email: 'ahelhady511@gmail.com',
   },
@@ -116,11 +125,11 @@ const CONFIG = {
   ],
   Teaching: [
     {
-      company: 'Microsoft',
-      position: 'Applied Data Scientist II',
-      from: 'AUG 2023',
-      to: 'MAR 2024',
-      companyLink: 'https://www.youtube.com/watch?v=KWcDW1gTobQ',
+      company: 'Cairo University, Faculty of Engineering - Computer Engineering',
+      position: 'Graduate Teaching Assistant',
+      from: 'OCT 2020',
+      to: 'JAN 2022',
+      companyLink: 'https://cmp.eng.cu.edu.eg/en/',
     },
     {
       company: 'Cairo University, Faculty of Engineering - Computer Engineering',
@@ -161,8 +170,10 @@ const CONFIG = {
       title: 'Improving Factuality in Clinical Abstractive Multi-Document Summarization by Guided Continued Pre-training',
       conferenceName: '',
       journalName: 'NAACL 2024',
-      authors: 'Ahmed Elhady, Khaled Mostafa Elsayed, Eneko Agirre, Mikel Artetxe',
-      link: 'https://example.com',
+      prefix_auth: "",
+      myself: "Ahmed Elhady,",
+      post_authors: 'Khaled Mostafa Elsayed, Eneko Agirre, Mikel Artetxe',
+      link: 'https://aclanthology.org/2024.naacl-short.66.pdf',
       description:
         'Factual accuracy is an important property of neural abstractive summarization models, especially in fact-critical domains such as the clinical literature. In this work, we introduce a guided continued pre-training stage for encoder-decoder models that improves their understanding of the factual attributes of documents, which is followed by supervised finetuning on summarization. Our approach extends the pre-training recipe of BART to incorporate 3 additional objectives based on PICO spans, which capture the population, intervention, comparison and outcomes related to a clinical study. Experiments on multidocument summarization in the clinical domain demonstrate that our approach is competitive with prior work, improving the quality and factuality of the summaries and achieving the best published results in factual accuracy on the MSLR task.',
     },
@@ -183,7 +194,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'cupcake',
+    defaultTheme: 'autumn',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode

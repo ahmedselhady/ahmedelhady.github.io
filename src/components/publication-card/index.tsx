@@ -92,18 +92,30 @@ const PublicationCard = ({
                     <p className="text-base-content opacity-50 text-sm">
                       {item.conferenceName}
                     </p>
+                  )}{(
+                    <div className="flex items-center flex-row gap-0">
+                      <p className="text-base-content opacity-50 text-sm">
+                        {item.prefix_auth}
+                      </p>
+                      <p className="text-base-content opacity-50 text-sm-bold">
+                        <strong>
+                        {item.myself}
+                        </strong>
+                      </p>
+                      <p className="text-base-content opacity-50 text-sm">
+                        {item.post_authors}
+                      </p>
+                    </div>
                   )}
                   {item.journalName && (
                     <p className="text-base-content opacity-70 text-sm">
                       {item.journalName}
                     </p>
                   )}
-                  {item.authors && (
-                    <p className="text-base-content opacity-50 text-sm">
-                      {item.authors}
-                    </p>
-                  )}
-                  <br />
+                  {
+                    <br />
+                  }
+
                   <hr class="dashed" />
                   {item.description && (
                     <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">

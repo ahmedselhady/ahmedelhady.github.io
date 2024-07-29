@@ -86,6 +86,10 @@ export const getSanitizedConfig = (
         fileUrl: config?.resume?.fileUrl || '',
       },
       skills: config?.skills || [],
+      educations:
+      config?.educations?.filter(
+        (item) => item.institution || item.degree || item.from || item.to,
+      ) || [],
       experiences:
         config?.experiences?.filter(
           (experience) =>
@@ -98,10 +102,6 @@ export const getSanitizedConfig = (
         config?.certifications?.filter(
           (certification) =>
             certification.year || certification.name || certification.body,
-        ) || [],
-      educations:
-        config?.educations?.filter(
-          (item) => item.institution || item.degree || item.from || item.to,
         ) || [],
       publications: config?.publications?.filter((item) => item.title) || [],
       googleAnalytics: {

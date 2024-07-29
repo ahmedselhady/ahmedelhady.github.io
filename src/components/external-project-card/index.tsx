@@ -14,6 +14,8 @@ const ExternalProjectCard = ({
   loading: boolean;
   googleAnalyticId?: string;
 }) => {
+
+
   const renderSkeleton = () => {
     const array = [];
     for (let index = 0; index < externalProjects.length; index++) {
@@ -98,16 +100,16 @@ const ExternalProjectCard = ({
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar opacity-90">
-                      <div className="w-28 h-28 mask mask-rectangle">
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          placeholder={skeleton({
-                            widthCls: 'w-full',
-                            heightCls: 'h-full',
-                            shape: '',
-                          })}
-                        />
+                      <div className="w-full h-full mask mask-rectangle">
+                          <LazyImage
+                            src={item.imageUrl}
+                            alt={'thumbnail'}
+                            placeholder={skeleton({
+                              widthCls: 'w-full',
+                              heightCls: 'h-full',
+                              shape: '',
+                            })}
+                          />
                       </div>
                     </div>
                   )}

@@ -63,6 +63,7 @@ export interface SanitizedSocial {
   telegram?: string;
   phone?: string;
   email?: string;
+  scholar?:string;
 }
 
 export interface SanitizedResume {
@@ -97,7 +98,9 @@ export interface SanitizedPublication {
   title: string;
   conferenceName?: string;
   journalName?: string;
-  authors?: string;
+  prefix_auth?: string,
+  post_authors?: string,
+  myself?:string,
   link?: string;
   description?: string;
 }
